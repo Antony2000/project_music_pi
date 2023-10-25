@@ -67,12 +67,12 @@ def on_press(key):
             file.write("time.sleep(" + "{:.2f}".format((time.time()-time2)-float(args.tiempoactivo)) + ")\n")
 
         time2=time.time()
-        print("GPIO.output("+args.nomvariable1+", True)")
-        file.write("GPIO.output(" + args.nomvariable1 + ", True)\n")
-        print("time.sleep("+args.tiempoactivo+")")#CAMBIAR AQUI EL TIEMPO ACTIVO EL GPIO
-        file.write("time.sleep(" + args.tiempoactivo + ")\n")  # CAMBIAR AQUI EL TIEMPO ACTIVO EL GPIO
         print("GPIO.output("+args.nomvariable1+", False)")
         file.write("GPIO.output(" + args.nomvariable1 + ", False)\n")
+        print("time.sleep("+args.tiempoactivo+")")#CAMBIAR AQUI EL TIEMPO ACTIVO EL GPIO
+        file.write("time.sleep(" + args.tiempoactivo + ")\n")  # CAMBIAR AQUI EL TIEMPO ACTIVO EL GPIO
+        print("GPIO.output("+args.nomvariable1+", True)")
+        file.write("GPIO.output(" + args.nomvariable1 + ", True)\n")
 
     if key == keyboard.Key.down:
 
@@ -86,12 +86,12 @@ def on_press(key):
             file.write("time.sleep(" + "{:.2f}".format((time.time() - time2) - float(args.tiempoactivo)) + ")\n")
 
         time2 = time.time()
-        print("GPIO.output(" + args.nomvariable2 + ", True)")
-        file.write("GPIO.output(" + args.nomvariable2 + ", True)\n")
-        print("time.sleep(" + args.tiempoactivo + ")")  # CAMBIAR AQUI EL TIEMPO ACTIVO EL GPIO
-        file.write("time.sleep(" + args.tiempoactivo + ")\n")  # CAMBIAR AQUI EL TIEMPO ACTIVO EL GPIO
         print("GPIO.output(" + args.nomvariable2 + ", False)")
         file.write("GPIO.output(" + args.nomvariable2 + ", False)\n")
+        print("time.sleep(" + args.tiempoactivo + ")")  # CAMBIAR AQUI EL TIEMPO ACTIVO EL GPIO
+        file.write("time.sleep(" + args.tiempoactivo + ")\n")  # CAMBIAR AQUI EL TIEMPO ACTIVO EL GPIO
+        print("GPIO.output(" + args.nomvariable2 + ", True)")
+        file.write("GPIO.output(" + args.nomvariable2 + ", True)\n")
 
     if key == keyboard.Key.right:
         # global cont
@@ -106,12 +106,12 @@ def on_press(key):
             file.write("time.sleep(" + "{:.2f}".format((time.time() - time2) - float(args.tiempoactivo)) + ")\n")
 
         time2 = time.time()
-        print("GPIO.output(" + args.nomvariable3 + ", True)")
-        file.write("GPIO.output(" + args.nomvariable3 + ", True)\n")
-        print("time.sleep(" + args.tiempoactivo + ")")  # CAMBIAR AQUI EL TIEMPO ACTIVO EL GPIO
-        file.write("time.sleep(" + args.tiempoactivo + ")\n")  # CAMBIAR AQUI EL TIEMPO ACTIVO EL GPIO
         print("GPIO.output(" + args.nomvariable3 + ", False)")
         file.write("GPIO.output(" + args.nomvariable3 + ", False)\n")
+        print("time.sleep(" + args.tiempoactivo + ")")  # CAMBIAR AQUI EL TIEMPO ACTIVO EL GPIO
+        file.write("time.sleep(" + args.tiempoactivo + ")\n")  # CAMBIAR AQUI EL TIEMPO ACTIVO EL GPIO
+        print("GPIO.output(" + args.nomvariable3 + ", True)")
+        file.write("GPIO.output(" + args.nomvariable3 + ", True)\n")
 
     if key == keyboard.Key.left:
         # global cont
@@ -126,12 +126,12 @@ def on_press(key):
             file.write("time.sleep(" + "{:.2f}".format((time.time() - time2) - float(args.tiempoactivo)) + ")\n")
 
         time2 = time.time()
-        print("GPIO.output(" + args.nomvariable4 + ", True)")
-        file.write("GPIO.output(" + args.nomvariable4 + ", True)\n")
-        print("time.sleep(" + args.tiempoactivo + ")")  # CAMBIAR AQUI EL TIEMPO ACTIVO EL GPIO
-        file.write("time.sleep(" + args.tiempoactivo + ")\n")  # CAMBIAR AQUI EL TIEMPO ACTIVO EL GPIO
         print("GPIO.output(" + args.nomvariable4 + ", False)")
         file.write("GPIO.output(" + args.nomvariable4 + ", False)\n")
+        print("time.sleep(" + args.tiempoactivo + ")")  # CAMBIAR AQUI EL TIEMPO ACTIVO EL GPIO
+        file.write("time.sleep(" + args.tiempoactivo + ")\n")  # CAMBIAR AQUI EL TIEMPO ACTIVO EL GPIO
+        print("GPIO.output(" + args.nomvariable4 + ", True)")
+        file.write("GPIO.output(" + args.nomvariable4 + ", True)\n")
 
     # try:
     #

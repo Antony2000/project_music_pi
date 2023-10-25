@@ -47,12 +47,12 @@ def on_press(key):
             file.write("time.sleep(" + "{:.2f}".format((time.time()-time2)-float(args.tiempoactivo)) + ")\n")
 
         time2=time.time()
-        print("GPIO.output("+args.nomvariable+", True)")
-        file.write("GPIO.output(" + args.nomvariable + ", True)\n")
-        print("time.sleep("+args.tiempoactivo+")")#CAMBIAR AQUI EL TIEMPO ACTIVO EL GPIO
-        file.write("time.sleep(" + args.tiempoactivo + ")\n")  # CAMBIAR AQUI EL TIEMPO ACTIVO EL GPIO
         print("GPIO.output("+args.nomvariable+", False)")
         file.write("GPIO.output(" + args.nomvariable + ", False)\n")
+        print("time.sleep("+args.tiempoactivo+")")#CAMBIAR AQUI EL TIEMPO ACTIVO EL GPIO
+        file.write("time.sleep(" + args.tiempoactivo + ")\n")  # CAMBIAR AQUI EL TIEMPO ACTIVO EL GPIO
+        print("GPIO.output("+args.nomvariable+", True)")
+        file.write("GPIO.output(" + args.nomvariable + ", True)\n")
 
     except AttributeError:
         print('special key pressed: {0}'.format(
