@@ -19,6 +19,13 @@ args = parser.parse_args()
 
 mixer.music.load(args.song)
 file = open(args.text, "w")
+file.write("import RPi.GPIO as GPIO\n")
+file.write("import time\n")
+file.write("GPIO.setmode(GPIO.BOARD)\n")
+file.write("GPIO.setup("+args.nomvariable1+", GPIO.OUT)\n")
+file.write("GPIO.setup("+args.nomvariable2+", GPIO.OUT)\n")
+file.write("GPIO.setup("+args.nomvariable3+", GPIO.OUT)\n")
+file.write("GPIO.setup("+args.nomvariable4+", GPIO.OUT)\n")
 
 print("Controles:")
 print("↑: n1")
@@ -41,7 +48,6 @@ mixer.music.play()
 start = time.time()
 cont=0
 time2=0
-
 
 def on_press(key):
     global start
