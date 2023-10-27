@@ -57,6 +57,8 @@ while True:
 
   GPIO.output(3, False)
   time.sleep(0.1)
+  GPIO.output(5, False)
+  time.sleep(0.1)
   GPIO.output(7, False)
   time.sleep(0.1)
   GPIO.output(8, False)
