@@ -1,6 +1,6 @@
 import RPi.GPIO as GPIO
 import os
-GPIO.setwarnings(False)
+#GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(3, GPIO.OUT)
 GPIO.setup(5, GPIO.OUT)
