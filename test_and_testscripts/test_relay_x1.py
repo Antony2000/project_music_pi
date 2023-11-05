@@ -49,7 +49,7 @@ while bucle:
     elif gpio == 6:
         GPIO.output(11, False)
         input("Presione cualquier tecla para continuar...")
-        GPIO.output(11, False)
+        GPIO.output(11, True)
     elif gpio == 7:
         GPIO.output(12, False)
         input("Presione cualquier tecla para continuar...")
