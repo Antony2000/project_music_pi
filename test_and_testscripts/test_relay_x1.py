@@ -1,4 +1,7 @@
 import RPi.GPIO as GPIO
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BOARD)
+
 bucle=True
 while bucle:
     gpio=int(input("Introduzca el relé que desea encender (Introduzca 0 para salir del programa): "))
