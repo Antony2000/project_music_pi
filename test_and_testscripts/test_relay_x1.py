@@ -25,7 +25,7 @@ while bucle:
     gpio=int(input("Introduzca el relé que desea encender (Introduzca 0 para salir del programa): "))
 
     if gpio == 0:
-        bucle==False
+        bucle=False
     elif gpio == 1:
         GPIO.output(3, False)
         input("Presione cualquier tecla para continuar...")
@@ -92,3 +92,4 @@ while bucle:
         GPIO.output(24, True)
     elif gpio < 0 or gpio > 16:
         print("Error: no es un numero valido (Rele entre 1 y 16)")
+        input("Presione cualquier tecla para continuar...")
