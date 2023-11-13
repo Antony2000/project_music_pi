@@ -16,4 +16,6 @@ for i in range(10):
     time.sleep(1)
     for x in arr_pin:
       GPIO.output(x, False)
+    time.sleep(1)
+
 
