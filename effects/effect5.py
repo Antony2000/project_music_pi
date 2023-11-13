@@ -18,7 +18,7 @@ for x in all_arr:
     GPIO.output(x, True)
 time.sleep(0.2)
 
-for i in range(4):
+for i in range(3):
     for x in arr_pin1:
       GPIO.output(x, False)
       time.sleep(0.1)
