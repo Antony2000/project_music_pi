@@ -10,12 +10,12 @@ for x in arr_pin:
   GPIO.setup(x, GPIO.OUT)
 
 
-for i in range(10):
+for i in range(5):
     for x in arr_pin:
       GPIO.output(x, True)
-    time.sleep(1)
+    time.sleep(0.5)
     for x in arr_pin:
       GPIO.output(x, False)
-    time.sleep(1)
+    time.sleep(0.5)
 
 
