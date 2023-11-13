@@ -6,7 +6,7 @@ arr_pin1 = [3,5,7,8]
 arr_pin2 = [26,11,12,13]
 arr_pin3 = [15,16,18,19]
 arr_pin4 = [21,22,23,24]
-all_arr = chain(arr_pin1,arr_pin2,arr_pin3,arr_pin4)
+all_arr = [3,5,7,8,26,11,12,13,15,16,18,19,21,22,23,24]
 
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
