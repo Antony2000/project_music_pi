@@ -9,7 +9,6 @@ GPIO.setmode(GPIO.BOARD)
 for x in arr_pin:
   GPIO.setup(x, GPIO.OUT)
 
-
 for i in range(10):
     for x in arr_pin:
       GPIO.output(x, True)
