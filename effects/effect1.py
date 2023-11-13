@@ -10,7 +10,7 @@ for x in arr_pin:
   GPIO.setup(x, GPIO.OUT)
 
 
-for i in range(5):
+for i in range(10):
     for x in arr_pin:
       GPIO.output(x, True)
     time.sleep(0.5)
