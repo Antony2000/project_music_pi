@@ -18,16 +18,16 @@ for x in all_arr:
     GPIO.output(x, True)
 time.sleep(0.2)
 
-for i in range(5):
+for i in range(4):
     for x in arr_pin1:
       GPIO.output(x, False)
       time.sleep(0.1)
     for i in range (4):
         for x in arr_pin1:
-            GPIO.output(x, True)
+            GPIO.output(x, False)
         time.sleep(0.2)
         for x in arr_pin1:
-            GPIO.output(x, False)
+            GPIO.output(x, True)
         time.sleep(0.2)
 
     for x in arr_pin2:
@@ -35,10 +35,10 @@ for i in range(5):
       time.sleep(0.1)
     for i in range (4):
         for x in arr_pin2:
-            GPIO.output(x, True)
+            GPIO.output(x, False)
         time.sleep(0.2)
         for x in arr_pin2:
-            GPIO.output(x, False)
+            GPIO.output(x, True)
         time.sleep(0.2)
 
     for x in arr_pin3:
@@ -46,10 +46,10 @@ for i in range(5):
       time.sleep(0.1)
     for i in range (4):
         for x in arr_pin3:
-            GPIO.output(x, True)
+            GPIO.output(x, False)
         time.sleep(0.2)
         for x in arr_pin3:
-            GPIO.output(x, False)
+            GPIO.output(x, True)
         time.sleep(0.2)
 
     for x in arr_pin4:
@@ -57,10 +57,10 @@ for i in range(5):
       time.sleep(0.1)
     for i in range (4):
         for x in arr_pin4:
-            GPIO.output(x, True)
+            GPIO.output(x, False)
         time.sleep(0.2)
         for x in arr_pin4:
-            GPIO.output(x, False)
+            GPIO.output(x, True)
         time.sleep(0.2)
 
 
