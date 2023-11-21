@@ -1,9 +1,9 @@
 import RPi.GPIO as GPIO
 import time
 
-arr_pin = [3,5,7,8,26,11,12,13,15,16,18,19,21,22,23,24]
-arr_pin1 = [3,7,26,12,15,18,21,23]
-arr_pin2 = [5,8,11,13,16,19,22,24]
+arr_pin = [3,5,7,8,26,11,12,13,15,16,18]
+arr_pin1 = [3,7,26,12,15,18]
+arr_pin2 = [5,8,11,13,16]
 
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
