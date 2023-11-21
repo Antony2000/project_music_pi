@@ -32,7 +32,8 @@ print("↑: n1")
 print("↓: n2")
 print("→: n3")
 print("←: n4")
-input("Presione cualquier tecla parac continuar...")
+print("F12: Terminar programa")
+input("Presione cualquier tecla para continuar...")
 
 
 print("Reproduciendo y grabando en 3...")
